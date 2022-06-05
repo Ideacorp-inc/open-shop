@@ -1,0 +1,11 @@
+@media (prefers-color-scheme: dark) {
+    :root{
+        --nav-bg:#0C0C0C;
+        --d-d__list: #0C0C0C;
+    }
+}
+@media (max-width: 991px) {
+    .nav__container{
+        margin: auto;
+    }
+}

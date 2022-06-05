@@ -1,0 +1,8 @@
+
+.drop-down__button:focus ~ .d-d__list{
+    transform: scaleY(1);
+}
+
+.drop-down__button:focus .drop__icon{
+    transform: rotateX(180deg);
+}
