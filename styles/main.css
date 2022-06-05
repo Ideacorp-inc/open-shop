@@ -13,6 +13,7 @@
     --d-d-link__list: #ABABAB;
     --d-d-link__list-active: #313131;
     --d-d__pseudo-e: #C4C4C4;
+    --paddin__d-d__list: 15px;
 }
 body{
     font-family: var(--basefont-noto-s-r);
@@ -81,9 +82,6 @@ a{
 .phone-link:hover{
     color: var(--nav-link);
 }
-.dd-link{
-    text-align: center;
-}
 .drop__down__icon{
     margin-left: 5px;
 }
@@ -138,7 +136,7 @@ a{
     color: var(--d-d-link__list-active);
 }
 .drop-down, .phone-link, .sigin, .cart{
-    padding: 15px 0;
+    padding:  var(--paddin__d-d__list) 0;
 }
 .d-d__pseudo-e{
     position: relative;
