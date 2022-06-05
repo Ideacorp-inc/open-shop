@@ -2,6 +2,9 @@
     :root{
         --nav-bg:#0C0C0C;
         --d-d__list: #0C0C0C;
+        --d-d-link__list:  #BBBBBB;
+        --d-d-link__list-active: #fff;
+        --d-d__list: #0C0C0C;
     }
 }
 @media (max-width: 991px) {
