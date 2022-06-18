@@ -15,15 +15,512 @@
     <link rel="stylesheet" href="styles/hover.css">
     <link rel="stylesheet" href="styles/single.css">
     <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/offcanvas.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header>
-        
+        <nav class="navbar navbar-light">
+            <div class="container">
+                <div class="nav assortiment d-grid d-lg-none  align-items-centerv fixed-bottom 
+                bg-secondary" id="nav-tab" role="tablist">                  
+                  <a class="assortiment__link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="fa-regular fa-bars assortiment__icon"></i>
+                    <p class="assortiment__descr">Menu</p>
+                  </a>
+                  <a class="assortiment__link"  data-bs-toggle="collapse" data-bs-target="#cart">
+                    <i class="fa-regular fa-cart-shopping-fast assortiment__icon"></i>
+                    <p class="assortiment__descr">Cart</p>
+                   </a>
+                 <a class="assortiment__link" data-bs-toggle="collapse" data-bs-target="#like">
+                  <i class="fa-regular fa-heart assortiment__icon"></i>
+                  <p class="assortiment__descr">Like</p>
+                 </a>
+                 <a class="assortiment__link" data-bs-toggle="collapse" data-bs-target="#comments">
+                  <i class="fa-regular fa-comment-lines assortiment__icon"></i>
+                  <p class="assortiment__descr">Comment</p>
+                 </a>
+                 <a class="assortiment__link" data-bs-toggle="collapse" data-bs-target="#supportles">
+                  <i class="fa-regular fa-headset assortiment__icon"></i>
+                  <p class="assortiment__descr">Support</p>
+                 </a>
+              </div>
+
+
+              <div class="accordion" id="support">
+                <div class="">                 
+                  <div id="cart" class="collapse" data-bs-parent="#support">
+                    <div class=" fixed-top products__decr container bg-secondary text-white">
+                      <h2 class="products__added">Your Cart</h2>
+                      <div class="products__add-cart">
+                        <i class="fa-thin fa-mobile-button products__cart-iphone"></i>
+
+                        <div class="products__cart-prices">
+                          <p class="prduducts__add-descr">Samsung A21S</p>
+                        <p class="products__price">1шт. 210$</p>
+                        </div>
+
+                        <i class="fa-regular fa-cart-circle-check products__buy-icon"></i>
+                      </div>
+                      <div class="products__price-block">
+                        <a href="#" class="products__buy-link">Buy Now!</a>
+                      <a href="#" class="products__buy-link products__buy-link_price bg-warning text-white">Best Price</a>
+                      </div>
+
+                      <div class="products__add-cart">
+                        <i class="fa-thin fa-mobile-button products__cart-iphone"></i>
+
+                        <div class="products__cart-prices">
+                          <p class="prduducts__add-descr">iPhone XR</p>
+                        <p class="products__price">1шт. 510$</p>
+                        </div>
+
+                        <i class="fa-regular fa-cart-circle-check products__buy-icon"></i>
+                      </div>
+                      <div class="products__price-block">
+                        <a href="#" class="products__buy-link">Buy Now!</a>
+                      <a href="#" class="products__buy-link products__buy-link_price bg-warning text-white">Best Price</a>
+                      </div>
+
+                      <div class="products__add-cart">
+                        <i class="fa-thin fa-mobile-button products__cart-iphone"></i>
+
+                        <div class="products__cart-prices">
+                          <p class="prduducts__add-descr">iPhone 12Pro</p>
+                        <p class="products__price">1шт. 1510$</p>
+                        </div>
+
+                        <i class="fa-regular fa-cart-circle-check products__buy-icon"></i>
+                      </div>
+                      <div class="products__price-block">
+                        <a href="#" class="products__buy-link">Buy Now!</a>
+                      <a href="#" class="products__buy-link products__buy-link_price bg-warning text-white">Best Price</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="">                 
+                  <div id="like" class="collapse" data-bs-parent="#support">
+                    <div class=" fixed-top products__decr container bg-secondary text-white">
+                      <h2 class="products__added">Your Favorite</h2>
+                      <div class="products__add-cart">
+                        <i class="fa-thin fa-mobile-button products__cart-iphone"></i>
+
+                        <div class="products__cart-prices">
+                          <p class="prduducts__add-descr">Samsung A21S</p>
+                        <p class="products__price">1шт. 210$</p>
+                        </div>
+                        <i class="fa-regular fa-circle-heart products__buy-icon"></i>
+                      </div>
+                      <div class="products__price-block">
+                        <a href="#" class="products__buy-link">Buy Now!</a>
+                      <a href="#" class="products__buy-link products__buy-link_price bg-warning text-white">Go to cart</a>
+                      </div>
+
+                      <div class="products__add-cart">
+                        <i class="fa-thin fa-mobile-button products__cart-iphone"></i>
+
+                        <div class="products__cart-prices">
+                          <p class="prduducts__add-descr">iPhone XR</p>
+                        <p class="products__price">1шт. 510$</p>
+                        </div>
+
+                        <i class="fa-regular fa-circle-heart products__buy-icon"></i>
+                      </div>
+                      <div class="products__price-block">
+                        <a href="#" class="products__buy-link">Buy Now!</a>
+                      <a href="#" class="products__buy-link products__buy-link_price bg-warning text-white">Go to cart</a>
+                      </div>
+
+                      <div class="products__add-cart">
+                        <i class="fa-thin fa-mobile-button products__cart-iphone"></i>
+
+                        <div class="products__cart-prices">
+                          <p class="prduducts__add-descr">iPhone 12Pro</p>
+                        <p class="products__price">1шт. 1510$</p>
+                        </div>
+
+                        <i class="fa-regular fa-circle-heart products__buy-icon"></i>
+                      </div>
+                      <div class="products__price-block">
+                        <a href="#" class="products__buy-link">Buy Now!</a>
+                      <a href="#" class="products__buy-link products__buy-link_price bg-warning text-white">Go to cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="">                 
+                  <div id="comments" class="collapse" data-bs-parent="#support">
+                    <div class=" fixed-top products__decr container bg-secondary text-white">
+                      <h2 class="products__added">Opinion</h2>
+                      <div class="opinion">
+                        <h4 class="opinion__title">iMac</h4>
+                        <i class="fa-thin fa-laptop-code opinion__icon"></i>
+                        <form action="#" class="opinion__area">
+                          <textarea name="imac" id="#" class="opinion__area" placeholder="Type  your opinion"></textarea>
+                          <button class="opinio__send bg-warning text-white">Send</button>
+                        </form>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="">                 
+                  <div id="supportles" class="collapse" data-bs-parent="#support">
+                    <div class=" fixed-top products__decr container bg-secondary text-white">
+                      <h2 class="products__added">Support</h2>
+                      <div class="Support">
+                        <div class="dialog">
+                          <div class="div">
+                          <p class="dialog__left">This project for study verse</p>
+                        </div>
+                        <div>
+                          <p class="dialog__right">Okay! Thanks</p>
+                        </div>
+                        <div class="div">
+                          <p class="dialog__left">Developer Yuldashev Farxod</p>
+                        </div>
+                        <div class="div">
+                          <p class="dialog__left"><a href="https://t.me/Idea_corp" class="telegramlink">Click to the Sup</a></p>
+                        </div>
+                        </div>
+                        <form action="#" class="opinion__aread">
+                          <input type="search" class="support__search" placeholder="Type text">
+                          <button class="opinio__send bg-warning text-white">Send</button>
+                        </form>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  JAVASCRIPT END -->
+             <!--  Website Versein Start -->
+
+                <div class="navbar-nav productbar ms-auto d-none d-lg-grid">
+                  <div class="nav-item dropdown">
+                    <a class="nav-link products__list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cell Phones & Tablets
+                    </a>
+                    <div class="dropdown-menu products__item dropdown" aria-labelledby="navbarDropdownMenuLink">
+                      <ul>
+                        <li><a class="products__link-main products__link-main-under" href="#">Cell Phones</a></li>
+                        <li><a class="products__link" href="#">Xiaomi</a></li>
+                        <li><a class="products__link" href="#">Apple</a></li>
+                        <li><a class="products__link" href="#">Samsung</a></li>
+                        <li><a class="products__link" href="#">Huawei</a></li>
+                        <li><a class="products__link" href="#">BQ</a></li>
+                        <li><a class="products__link" href="#">Nokia</a></li>
+                        <li><a class="products__link" href="#">Inoi</a></li>
+                        <li><a class="products__link" href="#">Vivo</a></li>
+                    </ul>
+                      <ul>
+                        <li><a class="products__link-main" href="#">Tablets</a></li>
+                        <li><a class="products__link" href="#">Xiaomi</a></li>
+                        <li><a class="products__link" href="#">Apple</a></li>
+                        <li><a class="products__link" href="#">Huawei</a></li>
+                        <li><a class="products__link" href="#">BQ</a></li>
+                        <li><a class="products__link" href="#">More...</a></li>
+                    </ul>
+                      </div>
+                  </div>
+                  <div class="nav-item dropdown">
+                    <a class="nav-link products__list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Computers & Laptop
+                    </a>
+                    <div class="dropdown-menu products__item" aria-labelledby="navbarDropdownMenuLink">
+                      <ul>
+                        <li><a class="products__link-main products__link-main-under" href="#">Computers</a></li>
+                        <li><a class="products__link" href="#">Dream Machines</a></li>
+                        <li><a class="products__link" href="#">Apple mac</a></li>
+                        <li><a class="products__link" href="#">lenovo</a></li>
+                    </ul>
+                      <ul>
+                        <li><a class="products__link-main" href="#">Laptops</a></li>
+                        <li><a class="products__link" href="#">Imac</a></li>
+                        <li><a class="products__link" href="#">More..</a></li>
+  
+                        
+                    </ul>
+                      </div>
+                  </div>
+                  <div class="nav-item dropdown">
+                    <a class="nav-link products__list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      TV & Video
+                    </a>
+                    <div class="dropdown-menu products__item" aria-labelledby="navbarDropdownMenuLink">
+                      <ul>
+                        <li><a class="products__link-main products__link-main-under" href="#">Cell Phones</a></li>
+                        <li><a class="products__link" href="#">Xiaomi</a></li>
+                        <li><a class="products__link" href="#">Apple</a></li>
+                        <li><a class="products__link" href="#">Samsung</a></li>
+                        <li><a class="products__link" href="#">Huawei</a></li>
+                        <li><a class="products__link" href="#">BQ</a></li>
+                        <li><a class="products__link" href="#">Nokia</a></li>
+                        <li><a class="products__link" href="#">Inoi</a></li>
+                        <li><a class="products__link" href="#">Vivo</a></li>
+                    </ul>
+                      <ul>
+                        <li><a class="products__link-main" href="#">Tablets</a></li>
+                        <li><a class="products__link" href="#">Xiaomi</a></li>
+                        <li><a class="products__link" href="#">Apple</a></li>
+                        <li><a class="products__link" href="#">Huawei</a></li>
+                        <li><a class="products__link" href="#">BQ</a></li>
+                        <li><a class="products__link" href="#">More...</a></li>
+                    </ul>
+                      </div>
+                  </div>
+                  <div class="nav-item dropdown">
+                    <a class="nav-link products__list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Asseccories
+                    </a>
+                    <div class="dropdown-menu products__item" aria-labelledby="navbarDropdownMenuLink">
+                      <ul>
+                        <li><a class="products__link-main products__link-main-under" href="#">Cell Phones</a></li>
+                        <li><a class="products__link" href="#">Xiaomi</a></li>
+                        <li><a class="products__link" href="#">Apple</a></li>
+                        <li><a class="products__link" href="#">Samsung</a></li>
+                        <li><a class="products__link" href="#">Huawei</a></li>
+                        <li><a class="products__link" href="#">BQ</a></li>
+                        <li><a class="products__link" href="#">Nokia</a></li>
+                        <li><a class="products__link" href="#">Inoi</a></li>
+                        <li><a class="products__link" href="#">Vivo</a></li>
+                    </ul>
+                      <ul>
+                        <li><a class="products__link-main" href="#">Tablets</a></li>
+                        <li><a class="products__link" href="#">Xiaomi</a></li>
+                        <li><a class="products__link" href="#">Apple</a></li>
+                        <li><a class="products__link" href="#">Huawei</a></li>
+                        <li><a class="products__link" href="#">BQ</a></li>
+                        <li><a class="products__link" href="#">More...</a></li>
+                    </ul>
+                      </div>
+                  </div>
+                  <div class="nav-item dropdown">
+                    <a class="nav-link products__list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Home appliance
+                    </a>
+                    <div class="dropdown-menu products__item" aria-labelledby="navbarDropdownMenuLink">
+                      <ul>
+                        <li><a class="products__link-main products__link-main-under" href="#">Cell Phones</a></li>
+                        <li><a class="products__link" href="#">Xiaomi</a></li>
+                        <li><a class="products__link" href="#">Apple</a></li>
+                        <li><a class="products__link" href="#">Samsung</a></li>
+                        <li><a class="products__link" href="#">Huawei</a></li>
+                        <li><a class="products__link" href="#">BQ</a></li>
+                        <li><a class="products__link" href="#">Nokia</a></li>
+                        <li><a class="products__link" href="#">Inoi</a></li>
+                        <li><a class="products__link" href="#">Vivo</a></li>
+                    </ul>
+                      <ul>
+                        <li><a class="products__link-main" href="#">Tablets</a></li>
+                        <li><a class="products__link" href="#">Xiaomi</a></li>
+                        <li><a class="products__link" href="#">Apple</a></li>
+                        <li><a class="products__link" href="#">Huawei</a></li>
+                        <li><a class="products__link" href="#">BQ</a></li>
+                        <li><a class="products__link" href="#">More...</a></li>
+                    </ul>
+                      </div>
+                  </div>
+                  <div class="nav-item dropdown">
+                    <a class="nav-link products__list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Video Games & Consoles
+                    </a>
+                    <div class="dropdown-menu products__item" aria-labelledby="navbarDropdownMenuLink">
+                      <ul>
+                        <li><a class="products__link-main products__link-main-under" href="#">Cell Phones</a></li>
+                        <li><a class="products__link" href="#">Xiaomi</a></li>
+                        <li><a class="products__link" href="#">Apple</a></li>
+                        <li><a class="products__link" href="#">Samsung</a></li>
+                        <li><a class="products__link" href="#">Huawei</a></li>
+                        <li><a class="products__link" href="#">BQ</a></li>
+                        <li><a class="products__link" href="#">Nokia</a></li>
+                        <li><a class="products__link" href="#">Inoi</a></li>
+                        <li><a class="products__link" href="#">Vivo</a></li>
+                    </ul>
+                      <ul>
+                        <li><a class="products__link-main" href="#">Tablets</a></li>
+                        <li><a class="products__link" href="#">Xiaomi</a></li>
+                        <li><a class="products__link" href="#">Apple</a></li>
+                        <li><a class="products__link" href="#">Huawei</a></li>
+                        <li><a class="products__link" href="#">BQ</a></li>
+                        <li><a class="products__link" href="#">More...</a></li>
+                    </ul>
+                      </div>
+                  </div>
+                </div>
+
+              <!--  Website Versein End -->
+
+            <!--   ----------------------------------- -->
+
+             <!--  MOBILE VERSION START-->
+
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Товары</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="navbar-nav justify-content-sm-start flex-grow-1 pe-3">
+                      <div class="nav-item dropdown">
+                        <a class="nav-link products__list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Cell Phones & Tablets
+                        </a>
+                        <div class="dropdown-menu products__item" aria-labelledby="navbarDropdownMenuLink">
+                          <ul>
+                            <li><a class="products__link-main products__link-main-under" href="#">Cell Phones</a></li>
+                            <li><a class="products__link" href="#">Xiaomi</a></li>
+                            <li><a class="products__link" href="#">Apple</a></li>
+                            <li><a class="products__link" href="#">Samsung</a></li>
+                            <li><a class="products__link" href="#">Huawei</a></li>
+                            <li><a class="products__link" href="#">BQ</a></li>
+                            <li><a class="products__link" href="#">Nokia</a></li>
+                            <li><a class="products__link" href="#">Inoi</a></li>
+                            <li><a class="products__link" href="#">Vivo</a></li>
+                        </ul>
+                          <ul>
+                            <li><a class="products__link-main" href="#">Tablets</a></li>
+                            <li><a class="products__link" href="#">Xiaomi</a></li>
+                            <li><a class="products__link" href="#">Apple</a></li>
+                            <li><a class="products__link" href="#">Huawei</a></li>
+                            <li><a class="products__link" href="#">BQ</a></li>
+                            <li><a class="products__link" href="#">More...</a></li>
+                        </ul>
+                          </div>
+                      </div>
+                      <div class="nav-item dropdown">
+                        <a class="nav-link products__list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Computers & Laptop
+                        </a>
+                        <div class="dropdown-menu products__item" aria-labelledby="navbarDropdownMenuLink">
+                          <ul>
+                            <li><a class="products__link-main products__link-main-under" href="#">Computers</a></li>
+                            <li><a class="products__link" href="#">Dream Machines</a></li>
+                            <li><a class="products__link" href="#">Apple mac</a></li>
+                            <li><a class="products__link" href="#">lenovo</a></li>
+                        </ul>
+                          <ul>
+                            <li><a class="products__link-main" href="#">Laptops</a></li>
+                            <li><a class="products__link" href="#">Imac</a></li>
+                            <li><a class="products__link" href="#">More..</a></li>
+      
+                            
+                        </ul>
+                          </div>
+                      </div>
+                      <div class="nav-item dropdown">
+                        <a class="nav-link products__list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          TV & Video
+                        </a>
+                        <div class="dropdown-menu products__item" aria-labelledby="navbarDropdownMenuLink">
+                          <ul>
+                            <li><a class="products__link-main products__link-main-under" href="#">Cell Phones</a></li>
+                            <li><a class="products__link" href="#">Xiaomi</a></li>
+                            <li><a class="products__link" href="#">Apple</a></li>
+                            <li><a class="products__link" href="#">Samsung</a></li>
+                            <li><a class="products__link" href="#">Huawei</a></li>
+                            <li><a class="products__link" href="#">BQ</a></li>
+                            <li><a class="products__link" href="#">Nokia</a></li>
+                            <li><a class="products__link" href="#">Inoi</a></li>
+                            <li><a class="products__link" href="#">Vivo</a></li>
+                        </ul>
+                          <ul>
+                            <li><a class="products__link-main" href="#">Tablets</a></li>
+                            <li><a class="products__link" href="#">Xiaomi</a></li>
+                            <li><a class="products__link" href="#">Apple</a></li>
+                            <li><a class="products__link" href="#">Huawei</a></li>
+                            <li><a class="products__link" href="#">BQ</a></li>
+                            <li><a class="products__link" href="#">More...</a></li>
+                        </ul>
+                          </div>
+                      </div>
+                      <div class="nav-item dropdown">
+                        <a class="nav-link products__list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Asseccories
+                        </a>
+                        <div class="dropdown-menu products__item" aria-labelledby="navbarDropdownMenuLink">
+                          <ul>
+                            <li><a class="products__link-main products__link-main-under" href="#">Cell Phones</a></li>
+                            <li><a class="products__link" href="#">Xiaomi</a></li>
+                            <li><a class="products__link" href="#">Apple</a></li>
+                            <li><a class="products__link" href="#">Samsung</a></li>
+                            <li><a class="products__link" href="#">Huawei</a></li>
+                            <li><a class="products__link" href="#">BQ</a></li>
+                            <li><a class="products__link" href="#">Nokia</a></li>
+                            <li><a class="products__link" href="#">Inoi</a></li>
+                            <li><a class="products__link" href="#">Vivo</a></li>
+                        </ul>
+                          <ul>
+                            <li><a class="products__link-main" href="#">Tablets</a></li>
+                            <li><a class="products__link" href="#">Xiaomi</a></li>
+                            <li><a class="products__link" href="#">Apple</a></li>
+                            <li><a class="products__link" href="#">Huawei</a></li>
+                            <li><a class="products__link" href="#">BQ</a></li>
+                            <li><a class="products__link" href="#">More...</a></li>
+                        </ul>
+                          </div>
+                      </div>
+                      <div class="nav-item dropdown">
+                        <a class="nav-link products__list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Home appliance
+                        </a>
+                        <div class="dropdown-menu products__item" aria-labelledby="navbarDropdownMenuLink">
+                          <ul>
+                            <li><a class="products__link-main products__link-main-under" href="#">Cell Phones</a></li>
+                            <li><a class="products__link" href="#">Xiaomi</a></li>
+                            <li><a class="products__link" href="#">Apple</a></li>
+                            <li><a class="products__link" href="#">Samsung</a></li>
+                            <li><a class="products__link" href="#">Huawei</a></li>
+                            <li><a class="products__link" href="#">BQ</a></li>
+                            <li><a class="products__link" href="#">Nokia</a></li>
+                            <li><a class="products__link" href="#">Inoi</a></li>
+                            <li><a class="products__link" href="#">Vivo</a></li>
+                        </ul>
+                          <ul>
+                            <li><a class="products__link-main" href="#">Tablets</a></li>
+                            <li><a class="products__link" href="#">Xiaomi</a></li>
+                            <li><a class="products__link" href="#">Apple</a></li>
+                            <li><a class="products__link" href="#">Huawei</a></li>
+                            <li><a class="products__link" href="#">BQ</a></li>
+                            <li><a class="products__link" href="#">More...</a></li>
+                        </ul>
+                          </div>
+                      </div>
+                      <div class="nav-item dropdown">
+                        <a class="nav-link products__list" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Video Games & Consoles
+                        </a>
+                        <div class="dropdown-menu products__item" aria-labelledby="navbarDropdownMenuLink">
+                          <ul>
+                            <li><a class="products__link-main products__link-main-under" href="#">Cell Phones</a></li>
+                            <li><a class="products__link" href="#">Xiaomi</a></li>
+                            <li><a class="products__link" href="#">Apple</a></li>
+                            <li><a class="products__link" href="#">Samsung</a></li>
+                            <li><a class="products__link" href="#">Huawei</a></li>
+                            <li><a class="products__link" href="#">BQ</a></li>
+                            <li><a class="products__link" href="#">Nokia</a></li>
+                            <li><a class="products__link" href="#">Inoi</a></li>
+                            <li><a class="products__link" href="#">Vivo</a></li>
+                        </ul>
+                          <ul>
+                            <li><a class="products__link-main" href="#">Tablets</a></li>
+                            <li><a class="products__link" href="#">Xiaomi</a></li>
+                            <li><a class="products__link" href="#">Apple</a></li>
+                            <li><a class="products__link" href="#">Huawei</a></li>
+                            <li><a class="products__link" href="#">BQ</a></li>
+                            <li><a class="products__link" href="#">More...</a></li>
+                        </ul>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--  MOBILE VERSION END-->
+
+            </div>
+          </nav>
     </header>
-
-
-
-
     <main></main>
     <footer></footer>
     <script src="js/bootstrap.bundle.min.js"></script>

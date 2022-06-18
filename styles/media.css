@@ -5,9 +5,52 @@
         --d-d-link__list:  #BBBBBB;
         --d-d-link__list-active: #fff;
         --d-d__list: #0C0C0C;
+        --productsItempseudo: #fff;
     }
 }
-@media (max-width: 991px) {
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
     
-    
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    .form__btn{
+        display: none;
+    }
+    .form__icon-mobile{
+        display: block;
+    }
+}
+
+
+@media (max-width: 290px) {
+    .container {
+        max-width: 280px;
+    }
 }
