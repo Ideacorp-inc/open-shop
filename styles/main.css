@@ -19,6 +19,7 @@
     --formSearchColor: #bbb;
     --productsItempseudo: #313131;
     --productsItembg: #fff;
+    --slidertitle: #313131;
 }
 body{
     font-family: var(--basefont-noto-s-r);
@@ -279,3 +280,140 @@ input[type="search"]::placeholder{
 .offcanvas{
     margin-right: auto;
 }
+.slidercont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+ .slider__link{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    background: #313131;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 0;   
+}
+.slider__link:hover{
+    color: #fff;
+}
+.slider__shop{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--slidertitle);
+    margin-bottom: 100px;
+    position: relative;
+
+}
+.slider .slider__dot{
+    background: #ABABAB;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 15px;
+}
+.slider__inicators{
+    position: static;
+    margin: 50px 0 0 0;
+    display: flex; align-items: center;
+}
+ .slider .slider__dot.active{
+    background: var(--slidertitle);
+    width: 15px;
+    height: 15px;
+} 
+.slider__img{
+    height: 515px;
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.slider{
+    margin-top: 50px;
+}
+
+
+/*GRIDPREW START*/
+.gridprew{
+    margin-top: 91px;
+    margin-bottom: 145px;
+}
+.prewu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+.prewu .salers:nth-of-type(1){
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.prewu .salers:nth-of-type(2){
+    grid-column: span 2;
+    
+}
+.salers{
+    background: #F9F9F9;
+    position: relative;
+}
+.sallers__img{
+    width: 100%;
+    position: relative;
+    object-fit: contain;
+    
+}
+.sallresBlok{
+    position: absolute;
+    bottom: 20px;
+    left: 23px;
+}
+.salers__pseudo{
+    
+    position: absolute;
+}
+.sallers__title{
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: #313131;
+}
+.sallers__price{
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: #313131;
+}
+.salers__pseudo{
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background: #313131;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;align-items: center;
+    border-radius: 50%;
+}
+.sallresBlok_top{
+    top: 20px;
+    left: 23px;
+}
+.salers__pseudo-top{
+    top: 20px;
+    left: 23px;
+}
+.salers__pseudo-bottom{
+    bottom: 10px;
+    left: 20px;
+    
+}
+/*GRIDPREW AND*/

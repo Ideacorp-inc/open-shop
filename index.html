@@ -12,10 +12,10 @@
 
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/all.min.css">
-    <link rel="stylesheet" href="styles/hover.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/offcanvas.css">
-    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/hover.css$ver=1.2">
+    <link rel="stylesheet" href="styles/main.css$ver=1.2">
+    <link rel="stylesheet" href="styles/offcanvas.css$ver=1.2">
+    <link rel="stylesheet" href="styles/media.css$ver=1.2">
     
 </head>
 <body>
@@ -47,7 +47,7 @@
       <section class="productnav">
         <div class="container">       
             <div class="row">
-                  <img src="pictures/catalog/pages-icon/Logo.png" alt="" class="search__img-logo col-lg-3 col-12 ">
+                  <img src="pictures/catalog/pages-icon/Logo.png" alt="" class="search__img-logo col-lg-3 col-12 text-lg-center ">
                   <form class="search__form col-12 col-lg-8 offset-lg-1 me-auto">
                     <input type="search" class="form__search" placeholder="What are you looking for?">
                     <button class="form__btn"><i class="fa-regular fa-magnifying-glass form__icon"></i> Search our store</button><i class="fa-regular fa-magnifying-glass form__icon form__icon-mobile"></i>
@@ -61,23 +61,24 @@
               <div class="nav assortiment d-grid d-lg-none  align-items-centerv fixed-bottom 
               bg-secondary" id="nav-tab" role="tablist">                  
                 <a class="assortiment__link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                  <i class="fa-regular fa-bars assortiment__icon"></i>
+                 
+                  <i class="fa-thin fa-bars assortiment__icon"></i>
                   <p class="assortiment__descr">Menu</p>
                 </a>
                 <a class="assortiment__link"  data-bs-toggle="collapse" data-bs-target="#cart">
-                  <i class="fa-regular fa-cart-shopping-fast assortiment__icon"></i>
+                  <i class="fa-thin fa-cart-shopping-fast assortiment__icon"></i>
                   <p class="assortiment__descr">Cart</p>
                  </a>
                <a class="assortiment__link" data-bs-toggle="collapse" data-bs-target="#like">
-                <i class="fa-regular fa-heart assortiment__icon"></i>
+                <i class="fa-thin fa-heart assortiment__icon"></i>
                 <p class="assortiment__descr">Like</p>
                </a>
                <a class="assortiment__link" data-bs-toggle="collapse" data-bs-target="#comments">
-                <i class="fa-regular fa-comment-lines assortiment__icon"></i>
+                <i class="fa-thin fa-comment-lines assortiment__icon"></i>
                 <p class="assortiment__descr">Comment</p>
                </a>
                <a class="assortiment__link" data-bs-toggle="collapse" data-bs-target="#supportles">
-                <i class="fa-regular fa-headset assortiment__icon"></i>
+                <i class="fa-thin fa-headset assortiment__icon"></i>
                 <p class="assortiment__descr">Support</p>
                </a>
             </div>
@@ -556,6 +557,79 @@
 
           </div>
         </nav>
+      </section>
+      <section class="slider">
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="row text-center text-xl-start">
+          <div class="col-lg-6">             
+                <div class="carousel-inner w-100">
+                  <div class="carousel-item active w-100">
+                    <img src="pictures/main/iphons-prew/iphone-prew-1.png" class="slider__img" alt="#">
+                  </div>
+                  <div class="carousel-item w-100">
+                    <img src="pictures/main/iphons-prew/iphone-prew-2.png" class="slider__img" alt="#">
+                  </div>
+                  <div class="carousel-item w-100">
+                    <img src="pictures/main/iphons-shop/cell-phones/iphone-4.png" class="slider__img" alt="#">
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="col-lg-6 slidercont">
+              <div class="col-12">
+                <h1 class="slider__shop text-center col-12">
+                  Color your days with small joy
+                </h1>
+                <a href="#" class="slider__link col-4">Shop now!</a>
+              </div>
+            </div>
+            <div class="carousel-indicators slider__inicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active slider__dot" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="slider__dot" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="slider__dot" aria-label="Slide 3"></button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="gridprew">
+        <div class="container">
+          <div class="prewu">
+            <div class="salers">
+              <img src="pictures/main/iphons-shop/grids-prew/Rectangle.png" alt="" class="sallers__img">
+              <div class="salers__pseudo salers__pseudo-top">-57%</div>
+              <div class="sallresBlok">
+                <h4 class="sallers__title">Suunto SS050143000</h4>
+                <p class="sallers__price">70$</p>
+            </div>
+            </div>
+            <div class="salers">
+              <img src="pictures/main/iphons-shop/grids-prew/air-p.png" alt="" class="sallers__img">
+              <div class="salers__pseudo salers__pseudo-top">-30%</div>
+              <div class="sallresBlok">
+                <h4 class="sallers__title">Airpods 2.1</h4>
+                <p class="sallers__price">95$</p>
+            </div>
+            </div>
+            <div class="salers">
+              <img src="pictures/main/iphons-shop/grids-prew/power-b.png" alt="" class="sallers__img">
+              <div class="salers__pseudo salers__pseudo-bottom">-57%</div>
+              <div class="sallresBlok sallresBlok_top">
+                <h4 class="sallers__title">Xiaomi Mi Power Bank 2s 10000</h4>
+                <p class="sallers__price">70$</p>
+              </div>
+            </div>
+            <div class="salers">
+              <img src="pictures/main/iphons-shop/grids-prew/doc-stansiya.png" alt="" class="sallers__img">
+              <div class="salers__pseudo salers__pseudo-bottom">-20%</div>
+              <div class="sallresBlok sallresBlok_top ">
+                <h4 class="sallers__title">Remax RP-W1 White</h4>
+                <p class="sallers__price">11$</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
