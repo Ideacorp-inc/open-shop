@@ -20,6 +20,20 @@
     --productsItempseudo: #313131;
     --productsItembg: #fff;
     --slidertitle: #313131;
+    --btnmain: #313131;
+}
+.btn_main{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    display: block;
+    text-transform: uppercase;
+    background: #313131;
+    border: 1px solid var(--btnmain);
+    padding: 13px 0;
+
 }
 body{
     font-family: var(--basefont-noto-s-r);
@@ -416,4 +430,106 @@ input[type="search"]::placeholder{
     left: 20px;
     
 }
+.gridprew__btn{
+    max-width: 190px;
+    width: 100%;
+    margin: auto;
+    margin-top: 25px;
+}
 /*GRIDPREW AND*/
+/*CELL PHONES START*/
+.phones__title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    color: var(--btnmain);
+    margin-bottom: 30px;
+}
+.cart-block{
+    position: relative;
+    padding: 18px 26px 18px 26px;
+    min-height: 350px;
+    border: 1px solid transparent;
+    transition: 0.4s;
+    
+}
+.carts__main{
+    height: 100%;
+}
+.cart-block:hover{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.cart-block:hover .carts__icon{
+   display: block;
+}
+.cart-block:hover .carts__btn{
+   visibility: visible;
+}
+.carts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+}
+.carts__icon{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    font-size: 18px;
+    display: none;
+    transition: 0.4s;
+    
+}
+.like__link-cart{
+    color: var(--btnmain);
+    display: inline-block;
+    transition: 0.4s ease-in;
+}
+.carts__btn{
+    max-width: 100px;width: 100%;
+    padding: 5px 0;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    visibility: hidden;
+    margin-bottom: 20px;
+}
+.carts__img{
+    max-width: 260px;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+.carts__title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--btnmain);
+}
+.carts__price{
+    text-align: center;
+}
+.cart-block .carts__main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    flex-direction: column;
+}
+.cart-block .carts__img{
+    display: flex;
+    justify-content: center;
+    
+}
+/*CELL PHONES END*/
