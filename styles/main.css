@@ -21,6 +21,8 @@
     --productsItembg: #fff;
     --slidertitle: #313131;
     --btnmain: #313131;
+    --PL_logo-white: none;
+    --PL_logo-black:  block;
 }
 .btn_main{
     font-weight: 400;
@@ -34,6 +36,9 @@
     border: 1px solid var(--btnmain);
     padding: 13px 0;
 
+}
+.btn_main:hover{
+    color: #fff;
 }
 body{
     font-family: var(--basefont-noto-s-r);
@@ -532,4 +537,42 @@ input[type="search"]::placeholder{
     justify-content: center;
     
 }
+.cellphone{
+    margin-bottom: 70px;
+}
 /*CELL PHONES END*/
+/*PLAYSTATION START*/
+.PlayStation{
+    margin-bottom: 70px;
+}
+.PlayStation__logo-white{
+    display: var(--PL_logo-white);
+    margin-bottom: 20px;
+}
+.PlayStation-block{
+    position: relative;
+}
+.PlayStation__logo-black{
+    display:  var(--PL_logo-black);
+    margin-bottom: 20px;
+}
+.PlayStation__img{
+    max-width: 950px;
+    width: 100%;
+    object-fit: contain;
+}
+.PlayStation__title{
+    font-weight: 600;
+    font-size: 48px;
+    color: var(--btnmain);
+    margin-bottom: 70px;
+}
+.PlayStation__btn{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    max-width: 190px;
+    width: 100%;
+    text-transform: uppercase;
+}
+/*PLAYSTATION  end*/

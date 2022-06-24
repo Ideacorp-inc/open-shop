@@ -8,6 +8,8 @@
         --productsItempseudo: #fff;
         --slidertitle: #fff;
         --btnmain: #fff;
+        --PL_logo-white:  block;
+        --PL_logo-black:  none;
     }
 }
 @media (max-width: 1200px) {
